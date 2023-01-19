@@ -1,0 +1,297 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* 为了以后给内容添加 padding 时 不至于影响整体布局 */
+    box-sizing: border-box;
+}
+
+/* main  styling */
+html,
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    /*去除下划线*/
+}
+
+h1,
+h2,
+h3 {
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+p {
+    margin: 10px;
+}
+
+/* utility classes */
+.container {
+    /* 水平居中 */
+    margin: 0 auto;
+    max-width: 1100px;
+    overflow: hidden;
+    padding: 0 20px;
+
+}
+
+.clr {
+    clear: both;
+}
+
+.py {
+    padding: 10px 0;
+}
+
+.l-heading {
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.text-primary {
+    color: #f7c08a;
+}
+
+.bg-dark {
+    background: #444;
+    color: #fff;
+}
+
+/* navber */
+
+#navbar {
+    background: #333;
+    color: #fff;
+    overflow: auto;
+}
+
+#navbar a {
+    color: #fff;
+}
+
+/* 将导航栏里的 h1 标签和 ul标签 分布在左右  用到浮动*/
+#navbar h1 {
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar ul {
+    float: right;
+    list-style: none;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+    background: #444;
+    color: #f7c08a;
+}
+
+
+
+/* showcase */
+#showcase {
+    background: url('../imgs/01\ showcase.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.showcase-content {
+    color: #fff;
+    text-align: center;
+    padding-top: 170px;
+}
+
+#showcase h4 {
+    font-size: 60px;
+    line-height: 1.2em;
+
+}
+
+#showcase a {
+    color: #fff;
+}
+
+#showcase p {
+    padding: 30px;
+    font-size: 20px;
+    line-height: 1.7em;
+}
+
+.btn {
+    display: inline-block;
+    /*将a标签变成行块标签*/
+    font-size: 20px;
+    color: #fff;
+    background: #333;
+    padding: 13px 20px;
+    transition-duration: 0.4s;
+    border: none;
+}
+
+.btn:hover {
+    background: #f7c08a;
+}
+
+.btn-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* home-info */
+#home-info {
+    height: 400px;
+}
+
+.info-img {
+    float: left;
+    width: 50%;
+    background: url('../imgs/02\ homeinfo-info.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.info-content {
+    float: right;
+    width: 50%;
+    text-align: center;
+    height: 100%;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+
+#home-info h5 {
+    font-size: 25px;
+}
+
+#home-info p {
+    padding-top: 40px;
+}
+
+#home-info a {
+    margin-top: 40px;
+}
+
+/* features */
+.box {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    height: 260px;
+    padding: 30px;
+}
+
+#features p {
+    margin-top: 30px;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-primary {
+    background: #f7c08a;
+}
+
+/* about-info */
+#about-info .info-left {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#about-info .info-right {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+#about-info .info-right img {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 60%;
+    /*让一个图片 显示成椭圆*/
+}
+
+/* test*/
+
+.testim {
+    height: 600px;
+    background: url('../imgs/04\ about-about\ info\ .jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+}
+
+#testimon h2 {
+    text-align: center;
+    color: #fff;
+}
+
+#testimon .testi {
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+#testimon .testi img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 25px;
+}
+
+/* contact-form */
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+    height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #f7c08a;
+
+}
+
+/* footer */
+#main-footer {
+    background: #333;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
